@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/a_main_linear_layout_v_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/wing" />
+
+        <TextView
+            android:id="@+id/a_main_text_view_sets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/sets"
+            android:textColor="@color/colorBlack"
+            android:textSize="22sp"
+            app:fontFamily="@font/montserrat" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/a_main_constraint_layout_sets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="10dp">
+
+            <ImageButton
+                android:id="@+id/a_main_image_button_sets_minus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:background="@color/colorWhite"
+                android:contentDescription="@string/desc_minus"
+                android:tint="@color/colorGradientGreenStop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_remove_24px" />
+
+            <TextView
+                android:id="@+id/a_main_text_view_sets_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/set_number"
+                android:textColor="@color/colorGrey"
+                android:textSize="24sp"
+                app:fontFamily="@font/montserrat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/a_main_image_button_sets_plus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="80dp"
+                android:layout_marginRight="80dp"
+                android:background="@color/colorWhite"
+                android:contentDescription="@string/desc_plus"
+                android:tint="@color/colorGradientGreenStop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_add_24px" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/a_main_text_view_work_interval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:text="@string/work_interval"
+            android:textColor="@color/colorBlack"
+            android:textSize="22sp"
+            app:fontFamily="@font/montserrat" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/a_main_constraint_layout_work_interval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="10dp">
+
+            <ImageButton
+                android:id="@+id/a_main_image_button_work_interval_minus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:background="@color/colorWhite"
+                android:contentDescription="@string/desc_minus"
+                android:tint="@color/colorGradientGreenStop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_remove_24px" />
+
+            <TextView
+                android:id="@+id/a_main_text_view_work_interval_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/time"
+                android:textColor="@color/colorGrey"
+                android:textSize="24sp"
+                app:fontFamily="@font/montserrat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/a_main_image_button_work_interval_plus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="80dp"
+                android:layout_marginRight="80dp"
+                android:background="@color/colorWhite"
+                android:contentDescription="@string/desc_plus"
+                android:tint="@color/colorGradientGreenStop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_add_24px" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/a_main_text_view_rest_interval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:text="@string/rest_interval"
+            android:textColor="@color/colorBlack"
+            android:textSize="22sp"
+            app:fontFamily="@font/montserrat" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/a_main_constraint_layout_rest_interval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="80dp">
+
+            <ImageButton
+                android:id="@+id/a_main_image_button_rest_interval_minus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:background="@color/colorWhite"
+                android:contentDescription="@string/desc_minus"
+                android:tint="@color/colorGradientGreenStop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_remove_24px" />
+
+            <TextView
+                android:id="@+id/a_main_text_view_rest_interval_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/time"
+                android:textColor="@color/colorGrey"
+                android:textSize="24sp"
+                app:fontFamily="@font/montserrat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/a_main_image_button_rest_interval_plus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="80dp"
+                android:layout_marginRight="80dp"
+                android:background="@color/colorWhite"
+                android:contentDescription="@string/desc_plus"
+                android:tint="@color/colorGradientGreenStop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_add_24px" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/a_main_button_start"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_rectangle_green_cr30"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="@string/upper_start"
+            android:textColor="@color/colorWhite"
+            android:translationZ="2dp"
+            app:fontFamily="@font/montserrat" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
